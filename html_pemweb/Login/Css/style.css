@@ -60,7 +60,7 @@ body {
     font-size: 14px;
 }
 
-button {
+.login-button {
     width: 100%;
 
     padding: 12px;
@@ -75,9 +75,12 @@ button {
 
     font-size: 15px;
 
-    font-size: 15px;
+    text-decoration: none;
+
+    display: block;
+    text-align: center;
 }
 
-button:hover {
+.login-button:hover {
     background-color: #555;
 }
