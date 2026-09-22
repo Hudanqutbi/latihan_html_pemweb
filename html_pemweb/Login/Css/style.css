@@ -60,7 +60,7 @@ body {
     font-size: 14px;
 }
 
-button {
+.login-button {
     width: 100%;
 
     padding: 12px;
@@ -76,8 +76,142 @@ button {
     font-size: 15px;
 
     font-size: 15px;
+
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-button:hover {
+.login-button:hover {
     background-color: #555;
+}
+
+/*.redirect-text {
+    width: 100%;
+
+    padding: 5px;
+    
+    border: none;
+    
+    border-radius: 5px;
+    
+    c
+}
+
+/* =================================
+   FLEXBOX
+   ================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =================================
+   RESPONSIVE
+   ================================= */
+
+.login-container {
+    width: 90%;
+    max-width: 480px;
+}
+
+
+/* =================================
+   MEDIA QUERY - HP
+   ================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .login-container h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-login {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
+
+
+/* =================================
+   MEDIA QUERY - HP KECIL
+   ================================= */
+
+@media (max-width: 480px) {
+
+    .login-container {
+        padding: 25px 15px;
+    }
+
+    .login-container h1 {
+        font-size: 23px;
+    }
+
+}
+
+/* ================= RESPONSIVE LOGIN ================= */
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 35px 25px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .login-container h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-button {
+        padding: 11px;
+        font-size: 14px;
+    }
 }
